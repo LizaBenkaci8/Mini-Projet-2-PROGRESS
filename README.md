@@ -36,6 +36,7 @@ To get started, download the following datasets from IMDB:
     To start the API server, run the following command:
 ```bash
 python runn.py
+```
 
 The API will be available at http://localhost:8080.
 
@@ -44,23 +45,23 @@ The API will be available at http://localhost:8080.
 To start the web interface, run:
 ```bash
 python runn2.py
-
+```
     The web interface will be available at http://localhost:8081.
 ## API Endpoints
 
-    GET /movies/{id}: Retrieve a movie by its ID.
+    - GET /movies/{id}: Retrieve a movie by its ID.
 
-    GET /movies: Retrieve a list of movies with optional pagination and sorting.
+    - GET /movies: Retrieve a list of movies with optional pagination and sorting.
 
-    GET /actors/{id}: Retrieve an actor by their ID.
+    - GET /actors/{id}: Retrieve an actor by their ID.
 
-    GET /actors: Retrieve a list of actors with optional pagination and sorting.
+    - GET /actors: Retrieve a list of actors with optional pagination and sorting.
 
-    GET /actors/{id}/costars: Retrieve a list of co-actors who worked in the same movies.
+    - GET /actors/{id}/costars: Retrieve a list of co-actors who worked in the same movies.
 
-    GET /search/actors/{searchString}: Search for actors by name substring.
+    - GET /search/actors/{searchString}: Search for actors by name substring.
 
-    GET /search/movies/{searchString}: Search for movies by title substring with optional filtering.
+    - GET /search/movies/{searchString}: Search for movies by title substring with optional filtering.
 
 ### Prerequisites
 
@@ -68,3 +69,4 @@ Before running the project, ensure you have Python installed on your system. You
 
 ```bash
 pip install bottle requests pytest
+```
